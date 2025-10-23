@@ -1,1 +1,91 @@
+:root {
+    --gradient: linear-gradient(180deg, rgba(221,160,221,1) 0%, #8E4585 100%);
+  }
+  
+  body {
+    background: var(--gradient);
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 50px;
+  }
+  
+  .todo {
+    max-width: 600px;
+  }
+
+  h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+}
+
+  
+  .disabled {
+    text-decoration: line-through;
+    color: rgb(0, 0, 0);
+  }
+  
+  .scroll {
+    max-height: 250px;
+    overflow-y: auto;
+    padding-left: 0;
+  }
+  
+  .scroll::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  
+  .scroll::-webkit-scrollbar-thumb {
+    background-color: purple;
+    border-radius: 0.5rem;
+  }
+  
+  .todo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    border: 1px solid #ccc;
+  }
+  
+  .low {
+    background-color: #d4edda; 
+  }
+  
+  .medium {
+    background-color: #fff3cd; 
+  }
+  
+  .high {
+    background-color: #f8d7da; 
+  }
+  
+
+
+#deleteButton {
+    border: none;
+    background-color: purple; 
+    color: white; 
+    font-size: 1rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 0.3rem;
+}
+
+.btn {
+    color: white;
+    font-size: 1.1rem;
+    padding: 0.7rem 1.5rem;
+    border-radius: 0.3rem;
+    background-color: purple; 
+    border: none;
+   
+}
 
